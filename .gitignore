@@ -1,0 +1,5 @@
+/Sportsore2/packages
+bin
+obj
+*.suo
+*.user
