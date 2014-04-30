@@ -1,9 +1,13 @@
 ﻿using System.Collections.Generic;
 using SportsStore.Domain.Entities;
+using System.Linq;
+
 namespace SportsStore.Domain.Abstract
 {
     public interface IProductRepository
     {
-        IEnumerable<Product> Products { get; }
+        IQueryable<Product> Products { get; }
+        void SaveProduct(Product product);
+        Product DeleteProduct(int productID);
     }
 }
